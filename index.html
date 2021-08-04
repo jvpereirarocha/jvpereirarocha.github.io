@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="João Rocha">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>João Rocha</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="#" class="navbar-item">
+        Jvpr Tech
+      </a>
+      <a class="navbar-burger" data-target="navMenuMobile" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navMenuMobile" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="#about" class="navbar-item">About</a>
+        <a href="#projects" class="navbar-item">Projects</a>
+        <a href="#contact" class="navbar-item">Contact</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="fields is-grouped">
+            <a href="https://twitter.com/jvprdev" target="_blank">
+              <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://github.com/jvpereirarocha" target="_blank">
+              <i class="lab la-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/jvpereirarocha" target="_blank">
+              <i class="lab la-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="header">
+      <div class="header__presentation">
+        <div class="header__presentation--container">
+          <h2 class="title">João Victor Rocha</h2>
+          <h4 class="subtitle">
+            Sou desenvolvedor (focado em back-end) mas atuo também como fullstack.
+            <br/>
+            Veja mais sobre mim abaixo
+          </h4>
+        </div>
+      </div>
+      <div class="header__image--container">
+        <img src="assets/images/foto.jpg" alt="Me" class="header__image">
+      </div>
+    </header>
+    <section id="about" class="about-me">
+      <div class="container">
+        <div class="row about-me__text">
+          <h2 class="title">Sobre Mim</h2>
+          <p class="text">
+            Me chamo João Victor, tenho 24 anos e sou desenvolvedor de software
+            há aproximadamente 3 anos.
+            <br />
+            Atualmente atuo como desenvolvedor web fullstack e possuo experiência
+            com as tecnologias HTML, CSS, Javascript além de Python
+            e alguns dos frameworks populares da linguagem tais como Flask, FastAPI e Django.
+            Possuo experiência também com React.js para o frontend.
+          </p>
+          <p class="text">
+            Já trabalhei em projetos de pequeno, médio e grande portes
+            realizando integrações com outros sistemas, desenvolvimento de REST API's
+            e otimizações de código e de performance
+          </p>
+        </div>
+        <div class="row about-me__wallpaper">
+          <img src="assets/images/jvpr.jpg" alt="Me" class="about-me__img">
+        </div>
+        <div class="row"></div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h2 class="title">Projetos</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/images/todo-bg.jpg" alt="Tasks App" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              Tasks App
+            </div>
+            <div class="card-text">
+              Este projeto consiste em um gerenciador de tarefas onde é possível criar,
+              editar, listar e excluir tarefas. É possível adicionar uma descrição para
+              as tarefas e informar qual o seu estado: concluída ou em andamento
+              <br />
+              Um ótimo ToDo App para gerenciar tarefas
+            </div>
+            <div class="card-info">
+              <strong>Tecnologias:</strong>
+              HTML, CSS, Javascript, Python, Flask, Docker e PostgreSQL
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jvpereirarocha/tasks-app" target="_blank" class="btn btn-success">
+              Ver Repositório
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/images/be-the-hero.png" alt="Be the Hero" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              Be the Hero
+            </div>
+            <div class="card-text">
+              Este projeto consiste em uma página para conexão entre ONG's
+              que abrigam pessoas órfãs
+              <br />
+              Projeto desenvolvido na semana Omnistack da Rocketseat
+            </div>
+            <div class="card-info">
+              <strong>Tecnologias:</strong>
+              HTML, CSS, Javascript, Bootstrap, React.Js, Node.js, Express, Knex,
+              SQLite
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jvpereirarocha/cards-flexbox" target="_blank" class="btn btn-success">
+              Ver Repositório
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/images/password-bg.jpg" alt="Password Generator" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              Password Generator
+            </div>
+            <div class="card-text">
+              Este projeto gera senhas aleatórias e grava as senhas geradas
+              em um arquivo de extensão txt com a data de criação. O formato das senhas
+              são letras maiusculas e minúsculas, números e caracteres especiais.
+              <br />
+              As senhas possuem 8 caracteres
+            </div>
+            <div class="card-info">
+              <strong>Tecnologias:</strong>
+              Javascript e Node.Js
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jvpereirarocha/passwordGenerator" target="_blank" class="btn btn-success">
+              Ver Repositório
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/images/twitter-bg.jpg" alt="Twitter Bot" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              Twitter Bot
+            </div>
+            <div class="card-text">
+              Este projeto é um bot (robô) do Twitter que retweeta e responde todos os tweets
+              que possuem as palavras "Python" e "Javascript"
+              <br />
+              A resposta utilizada é "Nice Post"
+            </div>
+            <div class="card-info">
+              <strong>Tecnologia:</strong>
+              Python
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jvpereirarocha/twitter_bot" target="_blank" class="btn btn-success">
+              Ver Repositório
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/images/flexbox.png" alt="Cards CSS Flexbox" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              Card Flexbox CSS
+            </div>
+            <div class="card-text">
+              Este projeto consiste em cards criados com puro CSS e usando
+              a técnica do flexbox, sem o uso de frameworks
+              <br />
+              Os cards são responsivos, portanto, possuem adaptação a layouts mobile.
+            </div>
+            <div class="card-info">
+              <strong>Tecnologias:</strong>
+              HTML e CSS
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jvpereirarocha/cards-flexbox" target="_blank" class="btn btn-success">
+              Ver Repositório
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/images/blog-bg.jpg" alt="My Blog" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              My Blog
+            </div>
+            <div class="card-text">
+              Este projeto é um blog. Nele é possível realizar
+              adição, edição, exclusão e listagem de posts do blog
+              <br />
+              Projeto criado seguindo o tutorial da documentação do Flask
+            </div>
+          </div>
+          <div class="card-info">
+            <strong>Tecnologias:</strong>
+            HTML, CSS, Javascript, Python, Flask e PostgreSQL
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jvpereirarocha/blog" target="_blank" class="btn btn-success">
+              Ver Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-me">
+      <h2 class="title">Contato</h2>
+      <div class="form-area">
+        <form action="" class="contact-form">
+          <div class="field">
+            <label for="Name" class="label">Nome</label>
+            <div class="control has-icon left has-icon-right">
+              <input type="text" class="input">
+            </div>
+          </div>
+          <div class="field">
+            <label for="email" class="label">E-mail</label>
+            <div class="control has-icon left has-icon-right">
+              <input type="email" class="input" name="email" id="email">
+            </div>
+          </div>
+          <div class="field">
+            <textarea placeholder="Digite sua mensagem :)" name="message" id="message" class="textarea is-primary"></textarea>
+          </div>
+          <div class="buttons">
+            <button class="button is-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-area">
+      <h2 class="title">JVPR Tech</h2>
+    </div>
+    <div class="footer-content">
+      <div class="company-data">
+        <p class="text">
+          CNPJ: 37.606.618/0001-00
+          <br />
+          E-mail: jvpr.tech@gmail.com
+        </p>
+      </div>
+      <div class="copyright-area">
+        <p class="text">
+          Copyright &copy; 2021 - Todos os direitos reservados
+          <br />
+          Desenvolvido por João Victor Rocha
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

@@ -9,8 +9,15 @@
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>João Rocha</title>
+  <script type="text/javascript">
+    function fillTheCurrentYear () {
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      document.getElementById('currentYear').innerText = currentYear;
+    }
+  </script>
 </head>
-<body>
+<body onload="fillTheCurrentYear()">
   <nav class="navbar">
     <div class="navbar-brand">
       <a href="#" class="navbar-item">
@@ -66,18 +73,23 @@
         <div class="row about-me__text">
           <h2 class="title">Sobre Mim</h2>
           <p class="text">
-            Me chamo João Victor, tenho 24 anos e sou desenvolvedor de software
-            há aproximadamente 3 anos.
+            Me chamo João Victor, tenho 26 anos e sou desenvolvedor de software
+            há aproximadamente 5 anos.
             <br />
-            Atualmente atuo como desenvolvedor web fullstack e possuo experiência
+            Atualmente atuo como desenvolvedor web fullstack, com mais foco no backend. Possuo experiência
             com as tecnologias HTML, CSS, Javascript além de Python
             e alguns dos frameworks populares da linguagem tais como Flask, FastAPI e Django.
-            Possuo experiência também com React.js para o frontend.
+            Possuo experiência também com React.js e Vue.js para o frontend.
           </p>
           <p class="text">
             Já trabalhei em projetos de pequeno, médio e grande portes
             realizando integrações com outros sistemas, desenvolvimento de REST API's
             e otimizações de código e de performance
+          </p>
+          <p class="text">
+            Sou entusiasta de DevOps e atualmente estudo por conta própria alguns conceitos e tecnologias relacionadas.
+            <br />
+            Docker, Linux, Shell scripting, Kubernets, Terraform, AWS e GCP são alguns exemplos dos meus estudos atuais
           </p>
         </div>
         <div class="row about-me__wallpaper">
@@ -91,27 +103,29 @@
       <div class="cards">
         <div class="card">
           <div class="card-header">
-            <img src="assets/images/todo-bg.jpg" alt="Tasks App" class="card-img">
+            <img src="assets/images/coin.png" alt="Calcs Tracker" class="card-img">
           </div>
           <div class="card-body">
             <div class="card-title">
-              Tasks App
+              Calcs Tracker App
             </div>
             <div class="card-text">
-              Este projeto consiste em um gerenciador de tarefas onde é possível criar,
-              editar, listar e excluir tarefas. É possível adicionar uma descrição para
-              as tarefas e informar qual o seu estado: concluída ou em andamento
+              Este projeto consiste em um controle de gastos, onde é possível realizar autenticação via login com e-mail e senha.
+              É possível cadastrar e visualizar saldos de despesas e receitas.
               <br />
-              Um ótimo ToDo App para gerenciar tarefas
+              Um ótimo aplicativo para gerenciar seus gastos e suas receitas
             </div>
             <div class="card-info">
-              <strong>Tecnologias:</strong>
-              HTML, CSS, Javascript, Python, Flask, Docker e PostgreSQL
+              <strong>Tecnologias utilizadas:</strong>
+              HTML, CSS, Javascript, Python, Flask, Docker, Vue.js e PostgreSQL
             </div>
           </div>
           <div class="card-footer">
-            <a href="https://github.com/jvpereirarocha/tasks-app" target="_blank" class="btn btn-success">
-              Ver Repositório
+            <a href="https://github.com/jvpereirarocha/calcs-backend" target="_blank" class="btn btn-success">
+              Ver Repositório Backend
+            </a>
+            <a href="https://github.com/jvpereirarocha/financ-front" target="_blank" class="btn btn-success">
+              Ver Repositório Frontend
             </a>
           </div>
         </div>
@@ -277,14 +291,12 @@
     <div class="footer-content">
       <div class="company-data">
         <p class="text">
-          CNPJ: 37.606.618/0001-00
-          <br />
           E-mail: jvpr.tech@gmail.com
         </p>
       </div>
       <div class="copyright-area">
         <p class="text">
-          Copyright &copy; 2021 - Todos os direitos reservados
+          Copyright &copy; <span id="currentYear"></span> - Todos os direitos reservados
           <br />
           Desenvolvido por João Victor Rocha
         </p>
